@@ -1,0 +1,3 @@
+[submodule "alstom-tests"]
+	path = alstom-tests
+	url = ssh://git@github.com/gabessolo/alstom-tests.git

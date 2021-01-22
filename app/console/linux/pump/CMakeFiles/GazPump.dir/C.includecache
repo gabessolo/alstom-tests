@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/gifts/app/console/common/gaspump.h
+
+/root/gifts/app/console/linux/pump/gaspump.c
+../../common/gaspump.h
+/root/gifts/app/console/common/gaspump.h
+

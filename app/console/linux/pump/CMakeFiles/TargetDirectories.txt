@@ -1,0 +1,1 @@
+/root/gifts/app/console/linux/pump/CMakeFiles/GasPump.dir

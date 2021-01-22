@@ -1,9 +1,0 @@
-digraph "/root/gifts/app/console/linux/pump/CMakeFiles/2.8.12.2/CompilerIdC" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_111224f2e13e452fe74afc3746d39cd3 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="2.8.12.2" fontname="Helvetica", fontsize="10", URL="dir_111224f2e13e452fe74afc3746d39cd3.html"]
-  dir_7a376824cd509082a5d228f43894c649 [shape=box, label="CompilerIdC", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7a376824cd509082a5d228f43894c649.html"];
-  }
-}

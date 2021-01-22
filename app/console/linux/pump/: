@@ -1,0 +1,91 @@
+#ifndef __BANK__H__
+#define __BANK__H__
+
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <sstream>
+#include <cstdlib>
+#include <unistd.h>  
+
+using namespace std;
+
+
+const char*  BANKNAME = "bank.txt";    /* config of the bank */
+const char*  BANKAC   = "bankac.txt";  /* file contains account */
+const char*  BANKPS   =  "bankps.txt";  /* file contains person */
+const char*  BANKCUS  = "bankcus.txt"; /* file contains pair (person,account)*/
+
+const int  BANKID     =	0;	/* id du fichier qui identifie la banque */
+const int  BANKACID   =	1;	/* id du fichier qui identifie les comptes*/
+const int  BANKPSID   =	2;      /* id du fichier qui identifie les personnes*/
+const int  BANKCUSID  =	3;	/* id du fichier qui identifie la paire personne,compte*/
+
+const int  NBCUSTOMER =	1000;
+const int  MAXDATA    =	16;
+FILE* gfp[4]={NULL,NULL,NULL,NULL}; /* regroupe les id de tous les fichiers ouverts */
+
+int gpsId=0;  /* le compteur des pesonnes */
+int gacId=0;  /* le compteur des comptes */
+int gbcId=0;  /* le compteur du couple (personne,compte)*/
+
+struct bank
+{
+ string name;
+ string addr;
+ int    nbclientsmax;
+ int    nbclients;
+};
+
+struct person
+{
+ string firstname;
+ string lastname;
+ string addr;
+ int id;
+};
+
+struct account
+{
+ int number;
+ double amount;
+ string  pin;
+ int id;
+};
+
+/* cette structure fait la liaison entre la personne et son compte */
+struct bankcustomer
+{
+  int  psId;
+  int  acId;
+  int id;
+};
+
+
+struct bank gbq;	            /* configuration de la banque */		
+
+/* creation de la banque */
+void initbank(bool& checkinit,int max);
+
+/* efface tous les fichiers de la banque */
+ void razbank();
+ void showperson(struct person* ps);
+ void addperson(struct person* ps);
+ void delperson(struct person* ps);
+ void addaccount(struct account* ac);
+ void delaccount(struct account* ac);
+ void addbankacount(struct bankcustomer* bc,struct person* ps,struct account* ac);
+ void delbankaccount(struct bankcustomer* bc);
+ void savemoney(struct account* ac,double amount);
+ void withdrawmoney(struct account* ac,double amount);
+ int  init(int maxclient);
+ void submenu_A();
+ void closebank();
+ void submenu_L();
+ void menu();
+ void submenu_D();
+ void usage();
+
+#endif /* __BANK__H__*/
+/**/

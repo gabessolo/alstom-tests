@@ -1,0 +1,1 @@
+/bin/cc      CMakeFiles/GazPump.dir/automate.c.o CMakeFiles/GazPump.dir/gaspump.c.o CMakeFiles/GazPump.dir/bank.c.o  -o GazPump -rdynamic 

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/gifts/app/console/linux/common/bank.h
+stdio.h
+-
+iostream
+-
+string
+-
+cstring
+-
+sstream
+-
+cstdlib
+-
+unistd.h
+-
+
+/root/gifts/app/console/linux/common/bankUtils.cpp
+stdio.h
+-
+iostream
+-
+string
+-
+cstring
+-
+sstream
+-
+cstdlib
+-
+unistd.h
+-
+bank.h
+/root/gifts/app/console/linux/common/bank.h
+signal.h
+-
+
