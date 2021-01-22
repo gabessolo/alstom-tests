@@ -277,7 +277,7 @@ void menuGaspump()
     cout << "company Belgatech Bruxelles "<<endl;
     cout << "+++++++++ MENU +++++++"<<endl;
     cout << " 'B' : buy gas   "<<endl;	
-    cout << " 'E' : exit  "<<endl;	
+    cout << " 'CTRL-Z' : exit  "<<endl;	
     cout << "**********************************************************************************************************"<<endl;
    
    while(c!='Q')
@@ -286,7 +286,7 @@ void menuGaspump()
     switch(c)
     {
      case 'B': case 'b': submenu_B();break;
-     case 'E': case 'e': c='Q';break;
+     //case 'E': case 'e': c='Q';break;
      case '\r': case '\n':break;
      default:cout << "Unknown command"<<endl;break;
     }

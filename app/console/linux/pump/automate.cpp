@@ -46,10 +46,9 @@ int main(int argc, char** argv)
     
     bool checkinit=false;
     initbank(checkinit,NBCUSTOMER);
-
     signal(SIGINT,closeGas);     
 
-    while((opt = getopt(argc, argv, "p?E?e?")) != -1)  
+    while((opt = getopt(argc, argv, "p?")) != -1)  
     {  
     	initautomate(&gaspump);
         switch(opt)  
@@ -57,7 +56,6 @@ int main(int argc, char** argv)
             case 'p':  
 	        menuGaspump();	
 		break;
-	    case 'e':case 'E': break;
 	    case '?':
         	if (opt=='p')
           		printf ("Option %c requires an argument.\n", opt);
