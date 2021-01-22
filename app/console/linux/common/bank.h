@@ -68,7 +68,8 @@ void initbank(bool& checkinit,int max);
  void submenu_D();
  void usageBank();
  void usageGaspump();
- void  submenu_S();
+ void submenu_S();
+ void adddefaultcustomers();
 
 #endif /* __BANK__H__*/
 /**/

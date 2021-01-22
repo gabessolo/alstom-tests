@@ -64,6 +64,11 @@ void razbank()
   s+= BANKCUS;
   cout << s.c_str() << endl;
   system(s.c_str());
+  
+  gpsId=0;  /* le compteur des pesonnes */
+  gacId=0;  /* le compteur des comptes */
+  gbcId=0;  /* le compteur du couple (personne,compte)*/
+  gbq.nbclients=0;
 };
 
 void showperson(struct person* ps)
@@ -323,17 +328,18 @@ void usageBank()
 { 
      cout << "bank [-m max] : create the bank database with limited max clients"<<endl;  
      cout << "bank [-r ] : erase  database "<<endl;  
-     cout << "bank [-p ] : show menu "<<endl;  
+     cout << "bank [-p ] : start menu "<<endl;  
+     cout << "bank [-i ] : init bank "<<endl;  
 }
 
 void usageGaspump()  
 { 
      cout << "bank [-p ] : show menu "<<endl;  
 }
+
 /* creation de la banque */
 void initbank(bool& checkinit,int max)
 { 
-   
    gfp[BANKID]	 =fopen(BANKNAME,"r");
    gfp[BANKACID] =fopen(BANKAC,  "a+");
    gfp[BANKPSID] =fopen(BANKPS,  "a+");
@@ -342,7 +348,6 @@ void initbank(bool& checkinit,int max)
    /* the bank exist read config */
    if (gfp[BANKID]!=NULL)
    {
-	
    	fread(gbq.name,1,MAXDATA,gfp[BANKID]);
    	fread(gbq.addr,1,MAXDATA,gfp[BANKID]);
    	fread(&gbq.nbclients,1,sizeof(int),gfp[BANKID]);
@@ -445,3 +450,26 @@ void closeapp(int s)
 	if (s==SIGINT) closebank();	
 }
 
+void adddefaultcustomers()
+{
+   struct person  ps={
+	   .firstname="pierre",
+	   .lastname="vaernewyck",
+   	   .addr="Tournai"
+   };
+
+   struct account ac={
+   	.number=random()%NBCUSTOMER,
+ 	.amount=1500.0,
+   	.pin=1234
+   };
+
+   struct bankcustomer bc;
+   /* make the pair (person,account) */ 
+   bc.psId=ps.id;
+   bc.acId=ac.id;
+   
+   addperson(&ps);
+   addaccount(&ac);
+   addbankacount(&bc,&ps,&ac);
+}
