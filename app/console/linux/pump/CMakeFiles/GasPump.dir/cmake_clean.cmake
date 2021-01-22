@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/GasPump.dir/automate.cpp.o"
   "CMakeFiles/GasPump.dir/gaspump.cpp.o"
-  "CMakeFiles/GasPump.dir/root/gifts/app/console/linux/common/bankUtils.cpp.o"
+  "CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
   "GasPump.pdb"
   "GasPump"
 )

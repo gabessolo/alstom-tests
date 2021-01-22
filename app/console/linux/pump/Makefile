@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/gifts/app/console/linux/pump
+CMAKE_SOURCE_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/gifts/app/console/linux/pump
+CMAKE_BINARY_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gifts/app/console/linux/pump/CMakeFiles /root/gifts/app/console/linux/pump/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gifts/app/console/linux/pump/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,29 +162,29 @@ gaspump.cpp.s:
 	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/gaspump.cpp.s
 .PHONY : gaspump.cpp.s
 
-root/gifts/app/console/linux/common/bankUtils.o: root/gifts/app/console/linux/common/bankUtils.cpp.o
-.PHONY : root/gifts/app/console/linux/common/bankUtils.o
+root/Desktop/alstom-tests/app/console/linux/common/bankUtils.o: root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o
+.PHONY : root/Desktop/alstom-tests/app/console/linux/common/bankUtils.o
 
 # target to build an object file
-root/gifts/app/console/linux/common/bankUtils.cpp.o:
-	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/gifts/app/console/linux/common/bankUtils.cpp.o
-.PHONY : root/gifts/app/console/linux/common/bankUtils.cpp.o
+root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o
+.PHONY : root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o
 
-root/gifts/app/console/linux/common/bankUtils.i: root/gifts/app/console/linux/common/bankUtils.cpp.i
-.PHONY : root/gifts/app/console/linux/common/bankUtils.i
+root/Desktop/alstom-tests/app/console/linux/common/bankUtils.i: root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i
+.PHONY : root/Desktop/alstom-tests/app/console/linux/common/bankUtils.i
 
 # target to preprocess a source file
-root/gifts/app/console/linux/common/bankUtils.cpp.i:
-	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/gifts/app/console/linux/common/bankUtils.cpp.i
-.PHONY : root/gifts/app/console/linux/common/bankUtils.cpp.i
+root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i
+.PHONY : root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i
 
-root/gifts/app/console/linux/common/bankUtils.s: root/gifts/app/console/linux/common/bankUtils.cpp.s
-.PHONY : root/gifts/app/console/linux/common/bankUtils.s
+root/Desktop/alstom-tests/app/console/linux/common/bankUtils.s: root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s
+.PHONY : root/Desktop/alstom-tests/app/console/linux/common/bankUtils.s
 
 # target to generate assembly for a file
-root/gifts/app/console/linux/common/bankUtils.cpp.s:
-	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/gifts/app/console/linux/common/bankUtils.cpp.s
-.PHONY : root/gifts/app/console/linux/common/bankUtils.cpp.s
+root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s
+.PHONY : root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s
 
 # Help Target
 help:
@@ -201,9 +201,9 @@ help:
 	@echo "... gaspump.o"
 	@echo "... gaspump.i"
 	@echo "... gaspump.s"
-	@echo "... root/gifts/app/console/linux/common/bankUtils.o"
-	@echo "... root/gifts/app/console/linux/common/bankUtils.i"
-	@echo "... root/gifts/app/console/linux/common/bankUtils.s"
+	@echo "... root/Desktop/alstom-tests/app/console/linux/common/bankUtils.o"
+	@echo "... root/Desktop/alstom-tests/app/console/linux/common/bankUtils.i"
+	@echo "... root/Desktop/alstom-tests/app/console/linux/common/bankUtils.s"
 .PHONY : help
 
 

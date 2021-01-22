@@ -4,9 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/root/gifts/app/console/linux/pump/automate.cpp" "/root/gifts/app/console/linux/pump/CMakeFiles/GasPump.dir/automate.cpp.o"
-  "/root/gifts/app/console/linux/pump/gaspump.cpp" "/root/gifts/app/console/linux/pump/CMakeFiles/GasPump.dir/gaspump.cpp.o"
-  "/root/gifts/app/console/linux/common/bankUtils.cpp" "/root/gifts/app/console/linux/pump/CMakeFiles/GasPump.dir/root/gifts/app/console/linux/common/bankUtils.cpp.o"
+  "/root/Desktop/alstom-tests/app/console/linux/pump/automate.cpp" "/root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles/GasPump.dir/automate.cpp.o"
+  "/root/Desktop/alstom-tests/app/console/linux/pump/gaspump.cpp" "/root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles/GasPump.dir/gaspump.cpp.o"
+  "/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp" "/root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
