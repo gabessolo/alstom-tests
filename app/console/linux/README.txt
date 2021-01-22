@@ -21,6 +21,7 @@ usage:   ./Bank -p   => start the bank application
 			'D' : remove  a customer 
 			'R' : reinitialize the bank
 			'L' : display all customers
+			'I' : initialize database create a default customer 
 			'E' : exit
 
 	 ./Bank -r   => reinitialize the bank application
@@ -43,7 +44,7 @@ usage : ./Gaspump -p => start the gas pump application
 			------------------------------
 
 			'B' : buy gasoil
-			'E' : exit
+			'CTRL-Z': to exit
 
 ///////////////////////////////////////////////////
 
