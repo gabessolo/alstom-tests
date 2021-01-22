@@ -1,0 +1,19 @@
+digraph "main"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="closeGas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbc/automate_8cpp.html#a21bf39cd9adba65f3204bf0e60fd64b1"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="initautomate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d65/gaspump_8h.html#a80594f932b3668443ae708bb1f293372"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="initbank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#abb632f9678b62fc8d43240d1418ded72"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="menuGaspump",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a84c358c169c3cc38bbbc5cf00c904bc1"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="usageGaspump",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a10845bb210522fdf8a161ba35f630770"];
+}

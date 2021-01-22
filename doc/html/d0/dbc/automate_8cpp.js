@@ -1,0 +1,28 @@
+var automate_8cpp =
+[
+    [ "__AUTOMATE__H__", "d0/dbc/automate_8cpp.html#ab3482d5aa4eca17c1523d1c6d0ceba90", null ],
+    [ "bankauthorization", "d0/dbc/automate_8cpp.html#a1efee6481abd32ed72d52e5bfa8b15f0", null ],
+    [ "checkpin", "d0/dbc/automate_8cpp.html#a130d5f9cc53c2fade5b106dc0aa54786", null ],
+    [ "closeGas", "d0/dbc/automate_8cpp.html#a21bf39cd9adba65f3204bf0e60fd64b1", null ],
+    [ "entercard", "d0/dbc/automate_8cpp.html#a2c3fc72e910f124e4e30be2417ee92d5", null ],
+    [ "enterpin", "d0/dbc/automate_8cpp.html#ae68e7839ef1e57bc6388efd36175508b", null ],
+    [ "initautomate", "d0/dbc/automate_8cpp.html#a80594f932b3668443ae708bb1f293372", null ],
+    [ "initbank", "d0/dbc/automate_8cpp.html#abb632f9678b62fc8d43240d1418ded72", null ],
+    [ "main", "d0/dbc/automate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
+    [ "BANKAC", "d0/dbc/automate_8cpp.html#a86099c88b3780ba9a2b1d5365f21832e", null ],
+    [ "BANKACID", "d0/dbc/automate_8cpp.html#ab37776c355cac2d84eac39bbdf6693f6", null ],
+    [ "BANKCUS", "d0/dbc/automate_8cpp.html#a01cf0601f4f9ff71e98ab88b143e18e6", null ],
+    [ "BANKCUSID", "d0/dbc/automate_8cpp.html#a5012e2a26a12fa701db7f02637c0c5d8", null ],
+    [ "BANKID", "d0/dbc/automate_8cpp.html#ab870b6a01d1011c9929af5e4ba48d747", null ],
+    [ "BANKNAME", "d0/dbc/automate_8cpp.html#a03d06bfbbe52fa07f41d55e901339257", null ],
+    [ "BANKPS", "d0/dbc/automate_8cpp.html#a3194d655c25237d6bdb1bda5f01e99cd", null ],
+    [ "BANKPSID", "d0/dbc/automate_8cpp.html#ae69803812622033cdc3c3da2ee01e128", null ],
+    [ "gacId", "d0/dbc/automate_8cpp.html#aab51d6299084467b2e3d1c6618109428", null ],
+    [ "gaspump", "d0/dbc/automate_8cpp.html#a180b5e0dc2cab4be75fc38514024e5d3", null ],
+    [ "gbcId", "d0/dbc/automate_8cpp.html#ac1e6de0c90feb14dabad538639cbea64", null ],
+    [ "gbq", "d0/dbc/automate_8cpp.html#a65572f00bff89887f57dfbd6c169b84b", null ],
+    [ "gfp", "d0/dbc/automate_8cpp.html#a1d398435c583fec3c8ddcdd006d5f93c", null ],
+    [ "gpsId", "d0/dbc/automate_8cpp.html#afaf13ea019d681e71de85cd39ba835d1", null ],
+    [ "NBCUSTOMER", "d0/dbc/automate_8cpp.html#a68c70aa9477700da562b158eeadee537", null ],
+    [ "opt", "d0/dbc/automate_8cpp.html#a217e4b46670419e6c3665b3c9f96b7da", null ]
+];

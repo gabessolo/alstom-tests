@@ -1,0 +1,15 @@
+digraph "/root/gifts/app/console/linux/bank" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b9f99af893b22996669fbb81a42c8188 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="linux" fontname="Helvetica", fontsize="10", URL="dir_b9f99af893b22996669fbb81a42c8188.html"]
+  subgraph clusterdir_ff31f158d17de985b47ba31cbfb6e835 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ff31f158d17de985b47ba31cbfb6e835.html"];
+    dir_ff31f158d17de985b47ba31cbfb6e835 [shape=plaintext label="bank"];
+    dir_d4a38c65154275ac76c52939028b3f7e [shape=box label="CMakeFiles" color="red" fillcolor="white" style="filled" URL="dir_d4a38c65154275ac76c52939028b3f7e.html"];
+  }
+  }
+  dir_df4143c1ee238e0ee742617b498fcc2c [shape=box label="common" URL="dir_df4143c1ee238e0ee742617b498fcc2c.html"];
+  dir_ff31f158d17de985b47ba31cbfb6e835->dir_df4143c1ee238e0ee742617b498fcc2c [headlabel="1", labeldistance=1.5 headhref="dir_000004_000014.html"];
+}
