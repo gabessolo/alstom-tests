@@ -1,0 +1,14 @@
+digraph "/root/gifts/app/console/linux/pump/CMakeFiles/2.8.12.2" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_defc59b7fecaa4beefeafba0dbe46579 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CMakeFiles" fontname="Helvetica", fontsize="10", URL="dir_defc59b7fecaa4beefeafba0dbe46579.html"]
+  subgraph clusterdir_111224f2e13e452fe74afc3746d39cd3 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_111224f2e13e452fe74afc3746d39cd3.html"];
+    dir_111224f2e13e452fe74afc3746d39cd3 [shape=plaintext label="2.8.12.2"];
+    dir_7a376824cd509082a5d228f43894c649 [shape=box label="CompilerIdC" color="black" fillcolor="white" style="filled" URL="dir_7a376824cd509082a5d228f43894c649.html"];
+    dir_49ebb1886d3d289cb714e042491cea1e [shape=box label="CompilerIdCXX" color="black" fillcolor="white" style="filled" URL="dir_49ebb1886d3d289cb714e042491cea1e.html"];
+  }
+  }
+}

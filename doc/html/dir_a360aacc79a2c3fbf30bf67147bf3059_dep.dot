@@ -1,0 +1,9 @@
+digraph "/root/gifts/app/console/linux/bank/CMakeFiles/2.8.12.2/CompilerIdCXX" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f47ec636bec8c3df5e52a9e2a475ccd5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="2.8.12.2" fontname="Helvetica", fontsize="10", URL="dir_f47ec636bec8c3df5e52a9e2a475ccd5.html"]
+  dir_a360aacc79a2c3fbf30bf67147bf3059 [shape=box, label="CompilerIdCXX", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a360aacc79a2c3fbf30bf67147bf3059.html"];
+  }
+}

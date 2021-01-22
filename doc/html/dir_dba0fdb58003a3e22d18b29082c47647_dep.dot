@@ -1,0 +1,13 @@
+digraph "/root/gifts/app/console" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ee1cf9147548eae4e9fb91d23f2e4846 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="app" fontname="Helvetica", fontsize="10", URL="dir_ee1cf9147548eae4e9fb91d23f2e4846.html"]
+  subgraph clusterdir_dba0fdb58003a3e22d18b29082c47647 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_dba0fdb58003a3e22d18b29082c47647.html"];
+    dir_dba0fdb58003a3e22d18b29082c47647 [shape=plaintext label="console"];
+    dir_b9f99af893b22996669fbb81a42c8188 [shape=box label="linux" color="red" fillcolor="white" style="filled" URL="dir_b9f99af893b22996669fbb81a42c8188.html"];
+  }
+  }
+}

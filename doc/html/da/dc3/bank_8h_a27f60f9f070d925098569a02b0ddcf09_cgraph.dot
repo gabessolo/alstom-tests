@@ -1,0 +1,21 @@
+digraph "menuBank"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="menuBank",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="closebank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a60bb70c92f7ae8abb85c7a5c5daca1f9"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="submenu_A",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a4d0e26307661b665858ff3f256aadbd9"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="submenu_D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a5f8b08d0368ed3294fa7972eaeaf4330"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="submenu_L",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#ae530f132aaa8550f0e5398c0381cb60c"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="submenu_S",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#ae9286ef6e2af70d6ca5e302c60d6d54c"];
+  Node6 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="showaccount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d95/bank_utils_8cpp.html#a3f0f4ddd3b615749a2fa8c07ed7c4bb5"];
+}

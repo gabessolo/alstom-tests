@@ -1,0 +1,12 @@
+digraph "submenu_L"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="submenu_L",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="closebank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a60bb70c92f7ae8abb85c7a5c5daca1f9"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="showperson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc3/bank_8h.html#a46585078e685ea3507614db7c416f661"];
+}
