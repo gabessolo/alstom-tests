@@ -8,7 +8,7 @@
 
 using namespace std;
 
-extern FILE* gfp[4]; /* regroupe les id de tous les fichiers ouverts */
+extern FILE* gfp[5]; /* regroupe les id de tous les fichiers ouverts */
 extern struct bank gbq;	            /* configuration de la banque */		
 
 extern int gpsId;  /* le compteur des pesonnes */
@@ -17,11 +17,13 @@ extern int gbcId;  /* le compteur du couple (personne,compte)*/
 
 extern  char*  BANKNAME;    /* config of the bank */
 extern  char*  BANKAC;      /* file contains account */
+extern  char*  BANKAC2;      /* file contains account */
 extern  char*  BANKPS;      /* file contains person */
 extern  char*  BANKCUS;     /* file contains pair (person,account)*/
 
 extern int  BANKID;  	/* id du fichier qui identifie la banque */
 extern int  BANKACID;    	/* id du fichier qui identifie les comptes*/
+extern int  BANKACID2;    	/* id du fichier qui identifie les comptes*/
 extern int  BANKPSID;   	/* id du fichier qui identifie les personnes*/
 extern int  BANKCUSID;   	/* id du fichier qui identifie la paire personne,compte*/
 
@@ -33,6 +35,7 @@ int  GASPUMPMINIMUMAMOUNT=15;
    
 extern void razbank();
 extern void showperson(struct person* ps);
+extern void showaccount(struct account* ac);
 extern void addperson(struct person* ps);
 extern void delperson(struct person* ps);
 extern void addaccount(struct account* ac);
@@ -70,6 +73,7 @@ void entercard(automate* gp)
   }
   gp->number=atoi(data);
   gp->st=CARDINSERT;
+  cout << " card :"<< gp->number << endl ;
 }
 
 void enterpin(automate* gp)
@@ -91,6 +95,8 @@ void enterpin(automate* gp)
   }
   gp->pin=atoi(data);
   gp->st=PININSERT;
+  cout << " pin :"<< gp->pin << endl;
+  
 } 
 
 void checkcard(automate* gp)
@@ -202,17 +208,21 @@ void bankauthorization(automate* gp)
 			if (ac.amount >= GASPUMPMINIMUMAMOUNT)
 			{
 				gp->bankauthorization=true;
-                        	int amount=ac.amount-=GASPUMPMINIMUMAMOUNT;
+                        	double amount=ac.amount - GASPUMPMINIMUMAMOUNT;
 				fclose(gfp[BANKACID]);
   			
 				gfp[BANKACID]=fopen(oss.str().c_str(),"r");
-  				if (gfp[BANKACID]!=NULL)
+  				oss<<BANKAC2;
+				gfp[BANKACID2]=fopen(oss.str().c_str(),"w");
+  				if (gfp[BANKACID]!=NULL && gfp[BANKACID2]!=NULL)
   				{
 
 					int nbclientread=0;
 		        		while(nbclientread < gbq.nbclients)
         				{
 	   		
+						showaccount(&ac);
+
 						fread(&ac.id,1,sizeof(int),gfp[BANKACID]);
 			   			fread(&ac.pin,1,sizeof(int),gfp[BANKACID]);
    						fread(&ac.number,1,sizeof(int),gfp[BANKACID]);
@@ -222,29 +232,18 @@ void bankauthorization(automate* gp)
 						
 						if (ac.number==gp->number && ac.pin==gp->pin)
 						{
-       						fclose(gfp[BANKACID]);
-						gfp[BANKACID]=fopen(oss.str().c_str(),"r+");
-		  				if (gfp[BANKACID]!=NULL)
-  						{
-						
-						/* on recule pour modifier le montant restant sur le compte*/
-						fseek(gfp[BANKACID],(nbclientread-1)*sizeof(struct account),SEEK_CUR);
+							ac.amount=amount;
+							showaccount(&ac);
 
-						ac.amount=amount;
-
-						fwrite(&ac.id,1,sizeof(int),gfp[BANKACID]);
-				   		fwrite(&ac.pin,1,sizeof(int),gfp[BANKACID]);
-				   		fwrite(&ac.number,1,sizeof(int),gfp[BANKACID]);
-					   	fwrite(&ac.amount,1,sizeof(double),gfp[BANKACID]);
-						
 						}
-	   					
-						break; 
-						}
+						fwrite(&ac.id,1,sizeof(int),gfp[BANKACID2]);
+				   		fwrite(&ac.pin,1,sizeof(int),gfp[BANKACID2]);
+				   		fwrite(&ac.number,1,sizeof(int),gfp[BANKACID2]);
+					   	fwrite(&ac.amount,1,sizeof(double),gfp[BANKACID2]);
 					
-					}
-	
-				}
+				     }
+       				     fclose(gfp[BANKACID2]);
+			    }
 		     }
 		     break;
 	    }

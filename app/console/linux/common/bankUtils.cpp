@@ -12,6 +12,7 @@ using namespace std;
 
 char*  BANKNAME = "../common/bank.txt";    /* config of the bank */
 char*  BANKAC   = "../common/bankac.txt";  /* file contains account */
+char*  BANKAC2   = "../common/bankac2.txt";  /* file contains account */
 char*  BANKPS   = "../common/bankps.txt";  /* file contains person */
 char*  BANKCUS  = "../common/bankcus.txt"; /* file contains pair (person,account)*/
 
@@ -19,10 +20,14 @@ int  BANKID     =	0;	/* id du fichier qui identifie la banque */
 int  BANKACID   =	1;	/* id du fichier qui identifie les comptes*/
 int  BANKPSID   =	2;      /* id du fichier qui identifie les personnes*/
 int  BANKCUSID  =	3;	/* id du fichier qui identifie la paire personne,compte*/
+int  BANKACID2   =	4;	/* id du fichier qui identifie les comptes*/
 
 int  NBCUSTOMER =	1000;
 int  MAXDATA    =	16;
-FILE* gfp[4]={NULL,NULL,NULL,NULL}; /* regroupe les id de tous les fichiers ouverts */
+
+#define   FILES		5
+
+FILE* gfp[FILES]={NULL,NULL,NULL,NULL,NULL}; /* regroupe les id de tous les fichiers ouverts */
 
 int gpsId=0;  /* le compteur des pesonnes */
 int gacId=0;  /* le compteur des comptes */
@@ -37,7 +42,7 @@ struct bank gbq;	            /* configuration de la banque */
 /* efface tous les fichiers de la banque */
 void razbank()
 {
-  for (int i=0;i<4;i++)
+  for (int i=0;i<FILES;i++)
   {
     if ( NULL!=gfp[i])
     {
@@ -55,6 +60,11 @@ void razbank()
   cout << s.c_str() << endl;
   system(s.c_str());
 
+  s="rm ./";
+  s+=BANKAC2;
+  cout << s.c_str() << endl;
+  system(s.c_str());
+  
   s="rm ./";
   s+= BANKPS;
   cout << s.c_str() << endl;
@@ -342,6 +352,7 @@ void initbank(bool& checkinit,int max)
 { 
    gfp[BANKID]	 =fopen(BANKNAME,"r");
    gfp[BANKACID] =fopen(BANKAC,  "a+");
+   gfp[BANKACID2] =fopen(BANKAC2,  "a+");
    gfp[BANKPSID] =fopen(BANKPS,  "a+");
    gfp[BANKCUSID]=fopen(BANKCUS, "a+");
 
@@ -388,7 +399,7 @@ void initbank(bool& checkinit,int max)
    }
    
    checkinit=true;
-   for (int i=0;i<4;i++)
+   for (int i=0;i<FILES;i++)
    {
     if ( NULL==gfp[i])
     {
@@ -452,24 +463,43 @@ void closeapp(int s)
 
 void adddefaultcustomers()
 {
-   struct person  ps={
+   struct person  PS[]=
+   {
+	{
 	   .firstname="pierre",
 	   .lastname="vaernewyck",
    	   .addr="Tournai"
+   	},
+	{
+	   .firstname="gaetan",
+	   .lastname="abessolo",
+   	   .addr="paris"
+   	}
    };
 
-   struct account ac={
+   struct account AC[]=
+   {
+	{
    	.number=random()%NBCUSTOMER,
  	.amount=1500.0,
    	.pin=1234
-   };
+   	},
+	{
+   	.number=random()%NBCUSTOMER,
+ 	.amount=915.0,
+   	.pin=1452
+   	}
+  };
 
+   for(int i=0;i<sizeof(AC)/sizeof(AC[0]);i++)
+   {
    struct bankcustomer bc;
    /* make the pair (person,account) */ 
-   bc.psId=ps.id;
-   bc.acId=ac.id;
+   bc.psId=PS[i].id;
+   bc.acId=AC[i].id;
    
-   addperson(&ps);
-   addaccount(&ac);
-   addbankacount(&bc,&ps,&ac);
+   addperson(&PS[i]);
+   addaccount(&AC[i]);
+   addbankacount(&bc,&PS[i],&AC[i]);
+   }
 }
