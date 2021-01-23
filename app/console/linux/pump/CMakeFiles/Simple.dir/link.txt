@@ -1,1 +1,0 @@
-/bin/cc      CMakeFiles/Simple.dir/automate.c.o  -o Simple -rdynamic 

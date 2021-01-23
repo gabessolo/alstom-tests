@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/gifts/app/console/linux/bank
+CMAKE_SOURCE_DIR = /root/Downloads/alstom-tests/app/console/linux/bank
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/gifts/app/console/linux/bank
+CMAKE_BINARY_DIR = /root/Downloads/alstom-tests/app/console/linux/bank
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gifts/app/console/linux/bank/CMakeFiles /root/gifts/app/console/linux/bank/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Downloads/alstom-tests/app/console/linux/bank/CMakeFiles /root/Downloads/alstom-tests/app/console/linux/bank/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/gifts/app/console/linux/bank/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Downloads/alstom-tests/app/console/linux/bank/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -138,29 +138,29 @@ bank.cpp.s:
 	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/bank.cpp.s
 .PHONY : bank.cpp.s
 
-root/gifts/app/console/linux/common/bankUtils.o: root/gifts/app/console/linux/common/bankUtils.cpp.o
-.PHONY : root/gifts/app/console/linux/common/bankUtils.o
+root/Downloads/alstom-tests/app/console/linux/common/bankUtils.o: root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o
+.PHONY : root/Downloads/alstom-tests/app/console/linux/common/bankUtils.o
 
 # target to build an object file
-root/gifts/app/console/linux/common/bankUtils.cpp.o:
-	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/root/gifts/app/console/linux/common/bankUtils.cpp.o
-.PHONY : root/gifts/app/console/linux/common/bankUtils.cpp.o
+root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o
+.PHONY : root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o
 
-root/gifts/app/console/linux/common/bankUtils.i: root/gifts/app/console/linux/common/bankUtils.cpp.i
-.PHONY : root/gifts/app/console/linux/common/bankUtils.i
+root/Downloads/alstom-tests/app/console/linux/common/bankUtils.i: root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i
+.PHONY : root/Downloads/alstom-tests/app/console/linux/common/bankUtils.i
 
 # target to preprocess a source file
-root/gifts/app/console/linux/common/bankUtils.cpp.i:
-	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/root/gifts/app/console/linux/common/bankUtils.cpp.i
-.PHONY : root/gifts/app/console/linux/common/bankUtils.cpp.i
+root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i
+.PHONY : root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i
 
-root/gifts/app/console/linux/common/bankUtils.s: root/gifts/app/console/linux/common/bankUtils.cpp.s
-.PHONY : root/gifts/app/console/linux/common/bankUtils.s
+root/Downloads/alstom-tests/app/console/linux/common/bankUtils.s: root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s
+.PHONY : root/Downloads/alstom-tests/app/console/linux/common/bankUtils.s
 
 # target to generate assembly for a file
-root/gifts/app/console/linux/common/bankUtils.cpp.s:
-	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/root/gifts/app/console/linux/common/bankUtils.cpp.s
-.PHONY : root/gifts/app/console/linux/common/bankUtils.cpp.s
+root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/Bank.dir/build.make CMakeFiles/Bank.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s
+.PHONY : root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s
 
 # Help Target
 help:
@@ -174,9 +174,9 @@ help:
 	@echo "... bank.o"
 	@echo "... bank.i"
 	@echo "... bank.s"
-	@echo "... root/gifts/app/console/linux/common/bankUtils.o"
-	@echo "... root/gifts/app/console/linux/common/bankUtils.i"
-	@echo "... root/gifts/app/console/linux/common/bankUtils.s"
+	@echo "... root/Downloads/alstom-tests/app/console/linux/common/bankUtils.o"
+	@echo "... root/Downloads/alstom-tests/app/console/linux/common/bankUtils.i"
+	@echo "... root/Downloads/alstom-tests/app/console/linux/common/bankUtils.s"
 .PHONY : help
 
 

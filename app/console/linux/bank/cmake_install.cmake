@@ -1,4 +1,4 @@
-# Install script for directory: /root/gifts/app/console/linux/bank
+# Install script for directory: /root/Downloads/alstom-tests/app/console/linux/bank
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/root/gifts/app/console/linux/bank/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/root/Downloads/alstom-tests/app/console/linux/bank/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/root/gifts/app/console/linux/bank/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/root/Downloads/alstom-tests/app/console/linux/bank/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

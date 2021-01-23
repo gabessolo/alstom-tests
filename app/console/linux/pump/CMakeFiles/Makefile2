@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
+CMAKE_SOURCE_DIR = /root/Downloads/alstom-tests/app/console/linux/pump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
+CMAKE_BINARY_DIR = /root/Downloads/alstom-tests/app/console/linux/pump
 
 #=============================================================================
 # Target rules for target CMakeFiles/GasPump.dir
@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
 CMakeFiles/GasPump.dir/all:
 	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/depend
 	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles  1 2 3
 	@echo "Built target GasPump"
 .PHONY : CMakeFiles/GasPump.dir/all
 
@@ -72,9 +72,9 @@ all: CMakeFiles/GasPump.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GasPump.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GasPump.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles 0
 .PHONY : CMakeFiles/GasPump.dir/rule
 
 # Convenience name for target.

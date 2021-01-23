@@ -1,1 +1,0 @@
-/bin/c++       CMakeFiles/GazPump.dir/automate.cpp.o CMakeFiles/GazPump.dir/gaspump.cpp.o CMakeFiles/GazPump.dir/root/gifts/app/console/linux/common/bankUtils.cpp.o  -o GazPump -rdynamic 

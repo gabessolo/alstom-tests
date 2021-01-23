@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/Bank.dir/bank.cpp.o"
-  "CMakeFiles/Bank.dir/root/gifts/app/console/linux/common/bankUtils.cpp.o"
+  "CMakeFiles/Bank.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
   "Bank.pdb"
   "Bank"
 )

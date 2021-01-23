@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
+CMAKE_SOURCE_DIR = /root/Downloads/alstom-tests/app/console/linux/pump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/Desktop/alstom-tests/app/console/linux/pump
+CMAKE_BINARY_DIR = /root/Downloads/alstom-tests/app/console/linux/pump
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GasPump.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/GasPump.dir/flags.make
 
 CMakeFiles/GasPump.dir/automate.cpp.o: CMakeFiles/GasPump.dir/flags.make
 CMakeFiles/GasPump.dir/automate.cpp.o: automate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/GasPump.dir/automate.cpp.o"
-	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GasPump.dir/automate.cpp.o -c /root/Desktop/alstom-tests/app/console/linux/pump/automate.cpp
+	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GasPump.dir/automate.cpp.o -c /root/Downloads/alstom-tests/app/console/linux/pump/automate.cpp
 
 CMakeFiles/GasPump.dir/automate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GasPump.dir/automate.cpp.i"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Desktop/alstom-tests/app/console/linux/pump/automate.cpp > CMakeFiles/GasPump.dir/automate.cpp.i
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Downloads/alstom-tests/app/console/linux/pump/automate.cpp > CMakeFiles/GasPump.dir/automate.cpp.i
 
 CMakeFiles/GasPump.dir/automate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GasPump.dir/automate.cpp.s"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Desktop/alstom-tests/app/console/linux/pump/automate.cpp -o CMakeFiles/GasPump.dir/automate.cpp.s
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Downloads/alstom-tests/app/console/linux/pump/automate.cpp -o CMakeFiles/GasPump.dir/automate.cpp.s
 
 CMakeFiles/GasPump.dir/automate.cpp.o.requires:
 .PHONY : CMakeFiles/GasPump.dir/automate.cpp.o.requires
@@ -77,17 +77,17 @@ CMakeFiles/GasPump.dir/automate.cpp.o.provides.build: CMakeFiles/GasPump.dir/aut
 
 CMakeFiles/GasPump.dir/gaspump.cpp.o: CMakeFiles/GasPump.dir/flags.make
 CMakeFiles/GasPump.dir/gaspump.cpp.o: gaspump.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/GasPump.dir/gaspump.cpp.o"
-	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GasPump.dir/gaspump.cpp.o -c /root/Desktop/alstom-tests/app/console/linux/pump/gaspump.cpp
+	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GasPump.dir/gaspump.cpp.o -c /root/Downloads/alstom-tests/app/console/linux/pump/gaspump.cpp
 
 CMakeFiles/GasPump.dir/gaspump.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GasPump.dir/gaspump.cpp.i"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Desktop/alstom-tests/app/console/linux/pump/gaspump.cpp > CMakeFiles/GasPump.dir/gaspump.cpp.i
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Downloads/alstom-tests/app/console/linux/pump/gaspump.cpp > CMakeFiles/GasPump.dir/gaspump.cpp.i
 
 CMakeFiles/GasPump.dir/gaspump.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GasPump.dir/gaspump.cpp.s"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Desktop/alstom-tests/app/console/linux/pump/gaspump.cpp -o CMakeFiles/GasPump.dir/gaspump.cpp.s
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Downloads/alstom-tests/app/console/linux/pump/gaspump.cpp -o CMakeFiles/GasPump.dir/gaspump.cpp.s
 
 CMakeFiles/GasPump.dir/gaspump.cpp.o.requires:
 .PHONY : CMakeFiles/GasPump.dir/gaspump.cpp.o.requires
@@ -98,41 +98,41 @@ CMakeFiles/GasPump.dir/gaspump.cpp.o.provides: CMakeFiles/GasPump.dir/gaspump.cp
 
 CMakeFiles/GasPump.dir/gaspump.cpp.o.provides.build: CMakeFiles/GasPump.dir/gaspump.cpp.o
 
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o: CMakeFiles/GasPump.dir/flags.make
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o: /root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
-	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o -c /root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o: CMakeFiles/GasPump.dir/flags.make
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o: /root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
+	/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o -c /root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp
 
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp > CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.i
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i"
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp > CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.i
 
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s"
-	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp -o CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.s
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s"
+	/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp -o CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.s
 
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires:
-.PHONY : CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires:
+.PHONY : CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires
 
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides: CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires
-	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides.build
-.PHONY : CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides: CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GasPump.dir/build.make CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides.build
+.PHONY : CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides
 
-CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides.build: CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o
+CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.provides.build: CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o
 
 # Object files for target GasPump
 GasPump_OBJECTS = \
 "CMakeFiles/GasPump.dir/automate.cpp.o" \
 "CMakeFiles/GasPump.dir/gaspump.cpp.o" \
-"CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
+"CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o"
 
 # External object files for target GasPump
 GasPump_EXTERNAL_OBJECTS =
 
 GasPump: CMakeFiles/GasPump.dir/automate.cpp.o
 GasPump: CMakeFiles/GasPump.dir/gaspump.cpp.o
-GasPump: CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o
+GasPump: CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o
 GasPump: CMakeFiles/GasPump.dir/build.make
 GasPump: CMakeFiles/GasPump.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable GasPump"
@@ -144,7 +144,7 @@ CMakeFiles/GasPump.dir/build: GasPump
 
 CMakeFiles/GasPump.dir/requires: CMakeFiles/GasPump.dir/automate.cpp.o.requires
 CMakeFiles/GasPump.dir/requires: CMakeFiles/GasPump.dir/gaspump.cpp.o.requires
-CMakeFiles/GasPump.dir/requires: CMakeFiles/GasPump.dir/root/Desktop/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires
+CMakeFiles/GasPump.dir/requires: CMakeFiles/GasPump.dir/root/Downloads/alstom-tests/app/console/linux/common/bankUtils.cpp.o.requires
 .PHONY : CMakeFiles/GasPump.dir/requires
 
 CMakeFiles/GasPump.dir/clean:
@@ -152,6 +152,6 @@ CMakeFiles/GasPump.dir/clean:
 .PHONY : CMakeFiles/GasPump.dir/clean
 
 CMakeFiles/GasPump.dir/depend:
-	cd /root/Desktop/alstom-tests/app/console/linux/pump && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Desktop/alstom-tests/app/console/linux/pump /root/Desktop/alstom-tests/app/console/linux/pump /root/Desktop/alstom-tests/app/console/linux/pump /root/Desktop/alstom-tests/app/console/linux/pump /root/Desktop/alstom-tests/app/console/linux/pump/CMakeFiles/GasPump.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/Downloads/alstom-tests/app/console/linux/pump && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Downloads/alstom-tests/app/console/linux/pump /root/Downloads/alstom-tests/app/console/linux/pump /root/Downloads/alstom-tests/app/console/linux/pump /root/Downloads/alstom-tests/app/console/linux/pump /root/Downloads/alstom-tests/app/console/linux/pump/CMakeFiles/GasPump.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GasPump.dir/depend
 
