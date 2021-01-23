@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Downloads/alstom-tests/app/console/linux/exo3/exo3.cpp
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+
