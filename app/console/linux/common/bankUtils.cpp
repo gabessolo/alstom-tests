@@ -10,11 +10,11 @@
 
 using namespace std;
 
-char*  BANKNAME = "../common/bank.txt";    /* config of the bank */
-char*  BANKAC   = "../common/bankac.txt";  /* file contains account */
-char*  BANKAC2   = "../common/bankac2.txt";  /* file contains account */
-char*  BANKPS   = "../common/bankps.txt";  /* file contains person */
-char*  BANKCUS  = "../common/bankcus.txt"; /* file contains pair (person,account)*/
+char*  BANKNAME = "../nosql/bank.txt";    /* config of the bank */
+char*  BANKAC   = "../nosql/bankac.txt";  /* file contains account */
+char*  BANKAC2  = "../nosql/bankac2.txt";  /* file contains account */
+char*  BANKPS   = "../nosql/bankps.txt";  /* file contains person */
+char*  BANKCUS  = "../nosql/bankcus.txt"; /* file contains pair (person,account)*/
 
 int  BANKID     =	0;	/* id du fichier qui identifie la banque */
 int  BANKACID   =	1;	/* id du fichier qui identifie les comptes*/
@@ -23,7 +23,7 @@ int  BANKCUSID  =	3;	/* id du fichier qui identifie la paire personne,compte*/
 int  BANKACID2   =	4;	/* id du fichier qui identifie les comptes*/
 
 int  NBCUSTOMER =	1000;
-int  MAXDATA    =	16;
+int  MAXDATA    =	64;
 
 #define   FILES		5
 
@@ -308,6 +308,7 @@ void menuBank()
     cout << " 'L' : list all bank clients " << endl;	
     cout << " 'S' : list all bank accounts " << endl;	
     cout << " 'E' : exit  "<<endl;	
+    cout << " 'CTRL-Z' : exit  "<<endl;	
     cout << "**********************************************************************************************************"<<endl;
    
    while(c!='Q')

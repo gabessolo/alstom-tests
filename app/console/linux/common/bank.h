@@ -11,7 +11,7 @@
 
 using namespace std;
 
-#define	_MAXDATA	16
+#define	_MAXDATA	64	
 
 struct bank
 {

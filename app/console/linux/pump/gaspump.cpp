@@ -48,6 +48,7 @@ extern int  init(int maxclient);
 extern void submenu_A();
 extern void closebank();
 extern void submenu_L();
+extern void submenu_S();
 extern void menu();
 extern void submenu_D();
 extern void initbank(bool& checkinit,int max);
@@ -212,7 +213,6 @@ void bankauthorization(automate* gp)
 				gfp[BANKACID]=NULL;
   			
 				gfp[BANKACID]=fopen(oss.str().c_str(),"r");
-				cout << oss2.str().c_str() << endl;
 				gfp[BANKACID2]=fopen(oss2.str().c_str(),"w");
 				
 				if (gfp[BANKACID]!=NULL && gfp[BANKACID2]!=NULL)
@@ -221,8 +221,6 @@ void bankauthorization(automate* gp)
 					int nbclientread=0;
 		        		while(nbclientread < gbq.nbclients)
         				{
-	   		
-						showaccount(&ac);
 
 						fread(&ac.id,1,sizeof(int),gfp[BANKACID]);
 			   			fread(&ac.pin,1,sizeof(int),gfp[BANKACID]);
@@ -234,8 +232,7 @@ void bankauthorization(automate* gp)
 						if (ac.number==gp->number && ac.pin==gp->pin)
 						{
 							ac.amount=amount;
-							showaccount(&ac);
-
+							//showaccount(&ac);
 						}
 						fwrite(&ac.id,1,sizeof(int),gfp[BANKACID2]);
 				   		fwrite(&ac.pin,1,sizeof(int),gfp[BANKACID2]);
@@ -257,6 +254,12 @@ void bankauthorization(automate* gp)
  if (gp->bankauthorization==true)
  {
 	gp->st=AGREEMENT;
+  	string s="mv ";
+	s+= BANKAC2;
+	s+= "  " ;
+	s+= BANKAC;
+	//cout << s.c_str() << endl;
+	system(s.c_str());
  }else
  {
 	if (gp->pinvalid==true && gp->cardvalid==true)
@@ -277,6 +280,8 @@ void menuGaspump()
     cout << "company Belgatech Bruxelles "<<endl;
     cout << "+++++++++ MENU +++++++"<<endl;
     cout << " 'B' : buy gas   "<<endl;	
+    cout << " 'S' : list all bank accounts " << endl;	
+    cout << " 'E' : exit  "<<endl;	
     cout << " 'CTRL-Z' : exit  "<<endl;	
     cout << "**********************************************************************************************************"<<endl;
    
@@ -286,7 +291,8 @@ void menuGaspump()
     switch(c)
     {
      case 'B': case 'b': submenu_B();break;
-     //case 'E': case 'e': c='Q';break;
+     case 'S': case 's': submenu_S();break;
+     case 'E': case 'e': c='Q';break;
      case '\r': case '\n':break;
      default:cout << "Unknown command"<<endl;break;
     }
