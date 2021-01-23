@@ -184,11 +184,10 @@ void bankauthorization(automate* gp)
  if (gp->pinvalid==true && gp->cardvalid==true)
  {
   ostringstream oss;
+  ostringstream oss2;
   oss<<BANKAC;
+  oss2<<BANKAC2;
   
-  if (gp->cardvalid==false || gp->pinvalid==false)
-	return;
-
   gfp[BANKACID]	 =fopen(oss.str().c_str(),"r");
   if (gfp[BANKACID]!=NULL)
   {
@@ -210,11 +209,13 @@ void bankauthorization(automate* gp)
 				gp->bankauthorization=true;
                         	double amount=ac.amount - GASPUMPMINIMUMAMOUNT;
 				fclose(gfp[BANKACID]);
+				gfp[BANKACID]=NULL;
   			
 				gfp[BANKACID]=fopen(oss.str().c_str(),"r");
-  				oss<<BANKAC2;
-				gfp[BANKACID2]=fopen(oss.str().c_str(),"w");
-  				if (gfp[BANKACID]!=NULL && gfp[BANKACID2]!=NULL)
+				cout << oss2.str().c_str() << endl;
+				gfp[BANKACID2]=fopen(oss2.str().c_str(),"w");
+				
+				if (gfp[BANKACID]!=NULL && gfp[BANKACID2]!=NULL)
   				{
 
 					int nbclientread=0;
