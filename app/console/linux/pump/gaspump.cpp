@@ -8,7 +8,8 @@
 
 using namespace std;
 
-extern FILE* gfp[5]; /* regroupe les id de tous les fichiers ouverts */
+const int _NBFILES=5;
+extern FILE* gfp[_NBFILES]; /* regroupe les id de tous les fichiers ouverts */
 extern struct bank gbq;	            /* configuration de la banque */		
 
 extern int gpsId;  /* le compteur des pesonnes */

@@ -20,14 +20,14 @@ int  BANKID     =	0;	/* id du fichier qui identifie la banque */
 int  BANKACID   =	1;	/* id du fichier qui identifie les comptes*/
 int  BANKPSID   =	2;      /* id du fichier qui identifie les personnes*/
 int  BANKCUSID  =	3;	/* id du fichier qui identifie la paire personne,compte*/
-int  BANKACID2   =	4;	/* id du fichier qui identifie les comptes*/
+int  BANKACID2  =	4;	/* id du fichier qui identifie les comptes*/
 
 int  NBCUSTOMER =	1000;
 int  MAXDATA    =	64;
 
-#define   FILES		5
+const int  NBFILES    =	5;
 
-FILE* gfp[FILES]={NULL,NULL,NULL,NULL,NULL}; /* regroupe les id de tous les fichiers ouverts */
+FILE* gfp[NBFILES]={NULL,NULL,NULL,NULL,NULL}; /* regroupe les id de tous les fichiers ouverts */
 
 int gpsId=0;  /* le compteur des pesonnes */
 int gacId=0;  /* le compteur des comptes */
@@ -42,7 +42,7 @@ struct bank gbq;	            /* configuration de la banque */
 /* efface tous les fichiers de la banque */
 void razbank()
 {
-  for (int i=0;i<FILES;i++)
+  for (int i=0;i<NBFILES;i++)
   {
     if ( NULL!=gfp[i])
     {
@@ -400,7 +400,7 @@ void initbank(bool& checkinit,int max)
    }
    
    checkinit=true;
-   for (int i=0;i<FILES;i++)
+   for (int i=0;i<NBFILES;i++)
    {
     if ( NULL==gfp[i])
     {
